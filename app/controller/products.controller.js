@@ -4,10 +4,10 @@ export const ProductController = {
   getProducts: async (req, res) => {
     try {
       const data = await ProductModel.getProducts()
-      res.send(data).status(200)
+      res.status(200).send(data)
     } catch (error) {
       console.log(error)
-      res.send('Error getting products').status(500)
+      res.status(500).send('Error getting products')
     }
   }
 }

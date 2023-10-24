@@ -6,16 +6,14 @@ export const PricesController = {
       const { user, product } = req.params
       const data = await PriceModel.getSpecialProductsByUser(user, product)
       if (!data) {
-        res
-          .send({
-            error: 'user or product are not valid'
-          })
-          .status(400)
+        res.status(400).send({
+          error: 'user or product are not valid'
+        })
         return
       }
-      res.send({ product, specialPrice: data }).status(200)
+      res.status(200).send({ product, specialPrice: data })
     } catch (error) {
-      res.send('Error getting products').status(500)
+      res.status(500).send('Error getting products')
     }
   }
 }

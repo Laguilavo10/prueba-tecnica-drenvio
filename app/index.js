@@ -6,7 +6,9 @@ import { PORT } from './constant/const.js'
 
 const app = express()
 
-app.listen(PORT)
+const server = app.listen(PORT)
 
 app.use('/products', products)
 app.use('/prices', prices)
+
+export { app, server }
