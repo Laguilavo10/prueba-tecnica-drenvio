@@ -2,6 +2,10 @@
 
 Prueba tecnica para la empresa DRENVIO. Este proyecto es una API creada en NODEJS y EXPRESS, que tiene como finalidad presentar la solucion al reto propuesto
 
+## Importante
+
+Al URI connection que fue proveido para esta prueba se debe de agregar "challenge" despues del ultimo "/". Esto con la finalidad de usar la base de datos requerida para esta prueba.
+
 ## Instalación
 
 1. Clona este repositorio.
@@ -29,6 +33,18 @@ npm run start
 ```
 npm run test
 ```
+
+## EndPoints
+
+
+- /products : Devuelve todos los productos que se encuentran en Stock
+- /prices/:id/:productName : Devuelve el precio del producto. SI esta dentro de precios especiales, sino, devuelve el valor normal del producto
+
+### Datos de prueba
+- user = 1
+- productName = Nike Air Max 90
+
+
 
 ## Licencia
 
