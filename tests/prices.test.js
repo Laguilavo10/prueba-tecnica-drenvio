@@ -1,4 +1,4 @@
-import { app } from '../app/index.js'
+import { app, server } from '../app/index.js'
 import request from 'supertest'
 
 describe('Endpoint prices', function () {
@@ -36,4 +36,8 @@ describe('Endpoint prices', function () {
     expect(response.statusCode).toBe(400)
     expect(response.body.error).toBe('user or product are not valid')
   }, 10000)
+})
+
+afterAll(() => {
+  server.close()
 })

@@ -8,19 +8,24 @@ Prueba tecnica para la empresa DRENVIO. Este proyecto es una API creada en NODEJ
 ```
 git clone https://github.com/Laguilavo10/prueba-tecnica-drenvio.git
 ```
-2. Ejecuta `npm install` para instalar las dependencias.
+2. Muevete a la carpeta.
+```
+cd prueba-tecnica-drenvio
+```
+3. Ejecuta `npm install` para instalar las dependencias.
 ```
 npm install
 ```
 
 ## Uso
+1. Agrega las variables de entorno en un archivo .env
 
-1. Ejecuta `npm start` para iniciar el servidor.
+2. Ejecuta `npm start` para iniciar el servidor.
 ```
 npm run start
 ```
-2. Abre `http://localhost:3000` en tu navegador.
-3. Para ejecutar los test se debe ejecutar `npm run test`
+3. Abre `http://localhost:3000` en tu navegador.
+4. Para ejecutar los test se debe ejecutar `npm run test`
 ```
 npm run test
 ```
